@@ -1,0 +1,17 @@
+type Friend {
+  id: ID!
+  username: String!
+  profilePicURI: String!
+}
+
+type FriendActivity {
+  id: ID!
+  songName: String!
+  artistName: String!
+  albumCoverURI: String!
+  friend: Friend!
+}
+
+type Query {
+  getAllFriendsActivities(userID: String): [FriendActivity]!
+}

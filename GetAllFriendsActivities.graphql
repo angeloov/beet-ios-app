@@ -1,0 +1,12 @@
+query GetAllFriendsActivities {
+  getAllFriendsActivities {
+    id
+    songName
+    artistName
+    albumCoverURI
+    friend {
+      username
+      profilePicURI
+    }
+  }
+}

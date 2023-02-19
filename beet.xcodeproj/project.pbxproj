@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1702B18129A290BE00B3E4B2 /* BeetAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1702B18029A290BE00B3E4B2 /* BeetAPI */; };
+		172CD340299FF223003B2B62 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 172CD33F299FF223003B2B62 /* Apollo */; };
+		172CD34B299FF9D9003B2B62 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172CD34A299FF9D9003B2B62 /* config.swift */; };
+		178545A8295C8631002BC581 /* FriendIsListeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178545A7295C8631002BC581 /* FriendIsListeningView.swift */; };
+		1785983B299E518A006B342B /* FriendActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1785983A299E518A006B342B /* FriendActivityModel.swift */; };
+		17BAA658295B81E20030786D /* beetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BAA657295B81E20030786D /* beetApp.swift */; };
+		17BAA65A295B81E20030786D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BAA659295B81E20030786D /* ContentView.swift */; };
+		17BAA65C295B81E40030786D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BAA65B295B81E40030786D /* Assets.xcassets */; };
+		17BAA65F295B81E40030786D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BAA65E295B81E40030786D /* Preview Assets.xcassets */; };
+		17BAA667295B821D0030786D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BAA666295B821D0030786D /* HomeView.swift */; };
+		17BAA671295B86CB0030786D /* HelveticaNowDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17BAA66C295B86CB0030786D /* HelveticaNowDisplay-Medium.ttf */; };
+		17BAA672295B86CB0030786D /* HelveticaNowDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17BAA66D295B86CB0030786D /* HelveticaNowDisplay-Regular.ttf */; };
+		17BAA673295B86CB0030786D /* HelveticaNowDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17BAA66E295B86CB0030786D /* HelveticaNowDisplay-Black.ttf */; };
+		17BAA674295B86CB0030786D /* HelveticaNowDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17BAA66F295B86CB0030786D /* HelveticaNowDisplay-Light.ttf */; };
+		17BAA675295B86CB0030786D /* HelveticaNowDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17BAA670295B86CB0030786D /* HelveticaNowDisplay-Bold.ttf */; };
+		17BAA677295B90C00030786D /* HelveticaNowDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17BAA676295B90C00030786D /* HelveticaNowDisplay-ExtraBold.ttf */; };
+		17BAA679295B94C10030786D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BAA678295B94C10030786D /* Extentions.swift */; };
+		17DCFCD5296487930039AB0C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCFCD4296487930039AB0C /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		172CD34A299FF9D9003B2B62 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		17604BC929A28F750037123C /* beetAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = beetAPI; sourceTree = "<group>"; };
+		178545A7295C8631002BC581 /* FriendIsListeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendIsListeningView.swift; sourceTree = "<group>"; };
+		1785983A299E518A006B342B /* FriendActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendActivityModel.swift; sourceTree = "<group>"; };
+		17BAA654295B81E20030786D /* beet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17BAA657295B81E20030786D /* beetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beetApp.swift; sourceTree = "<group>"; };
+		17BAA659295B81E20030786D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17BAA65B295B81E40030786D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17BAA65E295B81E40030786D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17BAA666295B821D0030786D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		17BAA66B295B866C0030786D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		17BAA66C295B86CB0030786D /* HelveticaNowDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		17BAA66D295B86CB0030786D /* HelveticaNowDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		17BAA66E295B86CB0030786D /* HelveticaNowDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowDisplay-Black.ttf"; sourceTree = "<group>"; };
+		17BAA66F295B86CB0030786D /* HelveticaNowDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowDisplay-Light.ttf"; sourceTree = "<group>"; };
+		17BAA670295B86CB0030786D /* HelveticaNowDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		17BAA676295B90C00030786D /* HelveticaNowDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		17BAA678295B94C10030786D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		17DCFCD4296487930039AB0C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17BAA651295B81E20030786D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172CD340299FF223003B2B62 /* Apollo in Frameworks */,
+				1702B18129A290BE00B3E4B2 /* BeetAPI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		172CD334299FF023003B2B62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		172CD349299FF9BD003B2B62 /* ApolloGraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				172CD34A299FF9D9003B2B62 /* config.swift */,
+			);
+			path = ApolloGraphQL;
+			sourceTree = "<group>";
+		};
+		17604BC529A28DB30037123C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				17604BC929A28F750037123C /* beetAPI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		17859839299E516B006B342B /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				1785983A299E518A006B342B /* FriendActivityModel.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		17BAA64B295B81E20030786D = {
+			isa = PBXGroup;
+			children = (
+				17604BC529A28DB30037123C /* Packages */,
+				17BAA656295B81E20030786D /* beet */,
+				17BAA655295B81E20030786D /* Products */,
+				172CD334299FF023003B2B62 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		17BAA655295B81E20030786D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17BAA654295B81E20030786D /* beet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17BAA656295B81E20030786D /* beet */ = {
+			isa = PBXGroup;
+			children = (
+				172CD349299FF9BD003B2B62 /* ApolloGraphQL */,
+				17BAA66B295B866C0030786D /* Info.plist */,
+				17BAA66A295B863C0030786D /* Fonts */,
+				17859839299E516B006B342B /* DataModels */,
+				17BAA665295B820C0030786D /* Views */,
+				17BAA657295B81E20030786D /* beetApp.swift */,
+				17DCFCD4296487930039AB0C /* SettingsView.swift */,
+				17BAA659295B81E20030786D /* ContentView.swift */,
+				17BAA678295B94C10030786D /* Extentions.swift */,
+				17BAA65B295B81E40030786D /* Assets.xcassets */,
+				17BAA65D295B81E40030786D /* Preview Content */,
+			);
+			path = beet;
+			sourceTree = "<group>";
+		};
+		17BAA65D295B81E40030786D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				17BAA65E295B81E40030786D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17BAA665295B820C0030786D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17BAA666295B821D0030786D /* HomeView.swift */,
+				178545A7295C8631002BC581 /* FriendIsListeningView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17BAA66A295B863C0030786D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				17BAA66E295B86CB0030786D /* HelveticaNowDisplay-Black.ttf */,
+				17BAA670295B86CB0030786D /* HelveticaNowDisplay-Bold.ttf */,
+				17BAA676295B90C00030786D /* HelveticaNowDisplay-ExtraBold.ttf */,
+				17BAA66F295B86CB0030786D /* HelveticaNowDisplay-Light.ttf */,
+				17BAA66C295B86CB0030786D /* HelveticaNowDisplay-Medium.ttf */,
+				17BAA66D295B86CB0030786D /* HelveticaNowDisplay-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17BAA653295B81E20030786D /* beet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17BAA662295B81E40030786D /* Build configuration list for PBXNativeTarget "beet" */;
+			buildPhases = (
+				17BAA650295B81E20030786D /* Sources */,
+				17BAA651295B81E20030786D /* Frameworks */,
+				17BAA652295B81E20030786D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beet;
+			packageProductDependencies = (
+				172CD33F299FF223003B2B62 /* Apollo */,
+				1702B18029A290BE00B3E4B2 /* BeetAPI */,
+			);
+			productName = beet;
+			productReference = 17BAA654295B81E20030786D /* beet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17BAA64C295B81E20030786D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					17BAA653295B81E20030786D = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 17BAA64F295B81E20030786D /* Build configuration list for PBXProject "beet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17BAA64B295B81E20030786D;
+			packageReferences = (
+				172CD33E299FF223003B2B62 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 17BAA655295B81E20030786D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17BAA653295B81E20030786D /* beet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17BAA652295B81E20030786D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BAA673295B86CB0030786D /* HelveticaNowDisplay-Black.ttf in Resources */,
+				17BAA675295B86CB0030786D /* HelveticaNowDisplay-Bold.ttf in Resources */,
+				17BAA677295B90C00030786D /* HelveticaNowDisplay-ExtraBold.ttf in Resources */,
+				17BAA65F295B81E40030786D /* Preview Assets.xcassets in Resources */,
+				17BAA672295B86CB0030786D /* HelveticaNowDisplay-Regular.ttf in Resources */,
+				17BAA65C295B81E40030786D /* Assets.xcassets in Resources */,
+				17BAA671295B86CB0030786D /* HelveticaNowDisplay-Medium.ttf in Resources */,
+				17BAA674295B86CB0030786D /* HelveticaNowDisplay-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17BAA650295B81E20030786D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BAA679295B94C10030786D /* Extentions.swift in Sources */,
+				17BAA667295B821D0030786D /* HomeView.swift in Sources */,
+				178545A8295C8631002BC581 /* FriendIsListeningView.swift in Sources */,
+				17DCFCD5296487930039AB0C /* SettingsView.swift in Sources */,
+				17BAA65A295B81E20030786D /* ContentView.swift in Sources */,
+				172CD34B299FF9D9003B2B62 /* config.swift in Sources */,
+				17BAA658295B81E20030786D /* beetApp.swift in Sources */,
+				1785983B299E518A006B342B /* FriendActivityModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		17BAA660295B81E40030786D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17BAA661295B81E40030786D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17BAA663295B81E40030786D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"beet/Preview Content\"";
+				DEVELOPMENT_TEAM = L954QTLCCG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = beet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = angelovoicu.beet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17BAA664295B81E40030786D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"beet/Preview Content\"";
+				DEVELOPMENT_TEAM = L954QTLCCG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = beet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = angelovoicu.beet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17BAA64F295B81E20030786D /* Build configuration list for PBXProject "beet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17BAA660295B81E40030786D /* Debug */,
+				17BAA661295B81E40030786D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17BAA662295B81E40030786D /* Build configuration list for PBXNativeTarget "beet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17BAA663295B81E40030786D /* Debug */,
+				17BAA664295B81E40030786D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		172CD33E299FF223003B2B62 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1702B18029A290BE00B3E4B2 /* BeetAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BeetAPI;
+		};
+		172CD33F299FF223003B2B62 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 172CD33E299FF223003B2B62 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 17BAA64C295B81E20030786D /* Project object */;
+}
