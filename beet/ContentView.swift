@@ -8,12 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-					HomeView()
-        }
-        .padding()
-    }
+	var body: some View {
+		TabView {
+			HomeView()
+				.padding()
+				.tabItem {
+					Label("Home", systemImage: "house")
+				}
+			SettingsView()
+				.padding()
+				.tabItem {
+					Label("Settings", systemImage: "gear")
+				}
+		}
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {

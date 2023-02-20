@@ -9,17 +9,16 @@ import SwiftUI
 
 @main
 struct beetApp: App {
+	@StateObject var authentication = AuthenticationHandler()
+	
 	var body: some Scene {
 		WindowGroup {
-			TabView {
+			if authentication.isAuthenticated {
 				ContentView()
-					.tabItem {
-						Label("Home", systemImage: "house")
-					}
-				SettingsView()
-					.tabItem {
-						Label("Settings", systemImage: "gear")
-					}
+					.environmentObject(authentication)
+			} else {
+				LoginView()
+					.environmentObject(authentication)
 			}
 			
 		}

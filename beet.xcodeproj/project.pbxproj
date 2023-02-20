@@ -10,6 +10,8 @@
 		1702B18129A290BE00B3E4B2 /* BeetAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1702B18029A290BE00B3E4B2 /* BeetAPI */; };
 		172CD340299FF223003B2B62 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 172CD33F299FF223003B2B62 /* Apollo */; };
 		172CD34B299FF9D9003B2B62 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172CD34A299FF9D9003B2B62 /* config.swift */; };
+		1759FAA029A3938B00565259 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759FA9F29A3938B00565259 /* LoginView.swift */; };
+		1759FAA429A395DF00565259 /* AutenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759FAA329A395DF00565259 /* AutenticationHandler.swift */; };
 		178545A8295C8631002BC581 /* FriendIsListeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178545A7295C8631002BC581 /* FriendIsListeningView.swift */; };
 		1785983B299E518A006B342B /* FriendActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1785983A299E518A006B342B /* FriendActivityModel.swift */; };
 		17BAA658295B81E20030786D /* beetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BAA657295B81E20030786D /* beetApp.swift */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		172CD34A299FF9D9003B2B62 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		1759FA9F29A3938B00565259 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1759FAA329A395DF00565259 /* AutenticationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticationHandler.swift; sourceTree = "<group>"; };
 		17604BC929A28F750037123C /* beetAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = beetAPI; sourceTree = "<group>"; };
 		178545A7295C8631002BC581 /* FriendIsListeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendIsListeningView.swift; sourceTree = "<group>"; };
 		1785983A299E518A006B342B /* FriendActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendActivityModel.swift; sourceTree = "<group>"; };
@@ -77,6 +81,21 @@
 			path = ApolloGraphQL;
 			sourceTree = "<group>";
 		};
+		1759FAA129A395CB00565259 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		1759FAA229A395D000565259 /* Autentication */ = {
+			isa = PBXGroup;
+			children = (
+				1759FAA329A395DF00565259 /* AutenticationHandler.swift */,
+			);
+			path = Autentication;
+			sourceTree = "<group>";
+		};
 		17604BC529A28DB30037123C /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +115,7 @@
 		17BAA64B295B81E20030786D = {
 			isa = PBXGroup;
 			children = (
+				1759FAA129A395CB00565259 /* New Group */,
 				17604BC529A28DB30037123C /* Packages */,
 				17BAA656295B81E20030786D /* beet */,
 				17BAA655295B81E20030786D /* Products */,
@@ -114,13 +134,13 @@
 		17BAA656295B81E20030786D /* beet */ = {
 			isa = PBXGroup;
 			children = (
-				172CD349299FF9BD003B2B62 /* ApolloGraphQL */,
 				17BAA66B295B866C0030786D /* Info.plist */,
 				17BAA66A295B863C0030786D /* Fonts */,
+				1759FAA229A395D000565259 /* Autentication */,
 				17859839299E516B006B342B /* DataModels */,
 				17BAA665295B820C0030786D /* Views */,
+				172CD349299FF9BD003B2B62 /* ApolloGraphQL */,
 				17BAA657295B81E20030786D /* beetApp.swift */,
-				17DCFCD4296487930039AB0C /* SettingsView.swift */,
 				17BAA659295B81E20030786D /* ContentView.swift */,
 				17BAA678295B94C10030786D /* Extentions.swift */,
 				17BAA65B295B81E40030786D /* Assets.xcassets */,
@@ -140,8 +160,10 @@
 		17BAA665295B820C0030786D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				17DCFCD4296487930039AB0C /* SettingsView.swift */,
 				17BAA666295B821D0030786D /* HomeView.swift */,
 				178545A7295C8631002BC581 /* FriendIsListeningView.swift */,
+				1759FA9F29A3938B00565259 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1759FAA429A395DF00565259 /* AutenticationHandler.swift in Sources */,
 				17BAA679295B94C10030786D /* Extentions.swift in Sources */,
 				17BAA667295B821D0030786D /* HomeView.swift in Sources */,
 				178545A8295C8631002BC581 /* FriendIsListeningView.swift in Sources */,
+				1759FAA029A3938B00565259 /* LoginView.swift in Sources */,
 				17DCFCD5296487930039AB0C /* SettingsView.swift in Sources */,
 				17BAA65A295B81E20030786D /* ContentView.swift in Sources */,
 				172CD34B299FF9D9003B2B62 /* config.swift in Sources */,
@@ -387,6 +411,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,6 +442,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
