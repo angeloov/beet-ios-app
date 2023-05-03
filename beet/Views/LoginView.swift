@@ -14,8 +14,13 @@ struct LoginView: View {
 	@State private var username: String = ""
 	@State private var password: String = ""
 	
+	@State private var showWebView = false
+	
 	var body: some View {
 		VStack {
+			Text("Login")
+				.bold()
+			
 			Form {
 				TextField("Username", text: $username)
 					.textInputAutocapitalization(.never)
@@ -31,6 +36,17 @@ struct LoginView: View {
 					Text("Login")
 				})
 			}
+			
+			
+			Button {
+				showWebView.toggle()
+			} label: {
+				Text("Link")
+			}
+			.sheet(isPresented: $showWebView) {
+				WebView(url: URL(string: "http://localhost:8888/login")!, showWebView: $showWebView)
+			}
+			
 		}
 	}
 }

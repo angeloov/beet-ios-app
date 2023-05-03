@@ -27,7 +27,22 @@
 		17BAA677295B90C00030786D /* HelveticaNowDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17BAA676295B90C00030786D /* HelveticaNowDisplay-ExtraBold.ttf */; };
 		17BAA679295B94C10030786D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BAA678295B94C10030786D /* Extentions.swift */; };
 		17DCFCD5296487930039AB0C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCFCD4296487930039AB0C /* SettingsView.swift */; };
+		17F83B9E29B3742700CED9C7 /* SpotifyiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 17F83B9D29B3742700CED9C7 /* SpotifyiOS */; };
+		17F83BA329B37D0600CED9C7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F83BA229B37D0600CED9C7 /* WebView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		17F83B9B29B372AF00CED9C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		172CD34A299FF9D9003B2B62 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
@@ -51,6 +66,7 @@
 		17BAA676295B90C00030786D /* HelveticaNowDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
 		17BAA678295B94C10030786D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		17DCFCD4296487930039AB0C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		17F83BA229B37D0600CED9C7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				172CD340299FF223003B2B62 /* Apollo in Frameworks */,
+				17F83B9E29B3742700CED9C7 /* SpotifyiOS in Frameworks */,
 				1702B18129A290BE00B3E4B2 /* BeetAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,13 +96,6 @@
 				172CD34A299FF9D9003B2B62 /* config.swift */,
 			);
 			path = ApolloGraphQL;
-			sourceTree = "<group>";
-		};
-		1759FAA129A395CB00565259 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		1759FAA229A395D000565259 /* Autentication */ = {
@@ -115,7 +125,6 @@
 		17BAA64B295B81E20030786D = {
 			isa = PBXGroup;
 			children = (
-				1759FAA129A395CB00565259 /* New Group */,
 				17604BC529A28DB30037123C /* Packages */,
 				17BAA656295B81E20030786D /* beet */,
 				17BAA655295B81E20030786D /* Products */,
@@ -160,6 +169,7 @@
 		17BAA665295B820C0030786D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				17F83BA429B3995700CED9C7 /* Modals */,
 				17DCFCD4296487930039AB0C /* SettingsView.swift */,
 				17BAA666295B821D0030786D /* HomeView.swift */,
 				178545A7295C8631002BC581 /* FriendIsListeningView.swift */,
@@ -181,6 +191,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		17F83BA429B3995700CED9C7 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				17F83BA229B37D0600CED9C7 /* WebView.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,6 +209,7 @@
 				17BAA650295B81E20030786D /* Sources */,
 				17BAA651295B81E20030786D /* Frameworks */,
 				17BAA652295B81E20030786D /* Resources */,
+				17F83B9B29B372AF00CED9C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +219,7 @@
 			packageProductDependencies = (
 				172CD33F299FF223003B2B62 /* Apollo */,
 				1702B18029A290BE00B3E4B2 /* BeetAPI */,
+				17F83B9D29B3742700CED9C7 /* SpotifyiOS */,
 			);
 			productName = beet;
 			productReference = 17BAA654295B81E20030786D /* beet.app */;
@@ -231,6 +251,7 @@
 			mainGroup = 17BAA64B295B81E20030786D;
 			packageReferences = (
 				172CD33E299FF223003B2B62 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				17F83B9C29B3742700CED9C7 /* XCRemoteSwiftPackageReference "ios-sdk" */,
 			);
 			productRefGroup = 17BAA655295B81E20030786D /* Products */;
 			projectDirPath = "";
@@ -271,6 +292,7 @@
 				1759FAA029A3938B00565259 /* LoginView.swift in Sources */,
 				17DCFCD5296487930039AB0C /* SettingsView.swift in Sources */,
 				17BAA65A295B81E20030786D /* ContentView.swift in Sources */,
+				17F83BA329B37D0600CED9C7 /* WebView.swift in Sources */,
 				172CD34B299FF9D9003B2B62 /* config.swift in Sources */,
 				17BAA658295B81E20030786D /* beetApp.swift in Sources */,
 				1785983B299E518A006B342B /* FriendActivityModel.swift in Sources */,
@@ -488,6 +510,14 @@
 				kind = branch;
 			};
 		};
+		17F83B9C29B3742700CED9C7 /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spotify/ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -499,6 +529,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 172CD33E299FF223003B2B62 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
+		};
+		17F83B9D29B3742700CED9C7 /* SpotifyiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F83B9C29B3742700CED9C7 /* XCRemoteSwiftPackageReference "ios-sdk" */;
+			productName = SpotifyiOS;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
