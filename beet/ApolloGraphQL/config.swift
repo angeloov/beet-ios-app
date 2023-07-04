@@ -8,4 +8,4 @@
 import Foundation
 import Apollo
 
-let apolloClient = ApolloClient(url: URL(string: "http://192.168.178.59/graphql")!)
+let apolloClient = ApolloClient(url: URL(string: "http://192.168.1.13/graphql")!)

@@ -13,7 +13,7 @@
 		1759FAA029A3938B00565259 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759FA9F29A3938B00565259 /* LoginView.swift */; };
 		1759FAA429A395DF00565259 /* AutenticationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759FAA329A395DF00565259 /* AutenticationHandler.swift */; };
 		178545A8295C8631002BC581 /* FriendIsListeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178545A7295C8631002BC581 /* FriendIsListeningView.swift */; };
-		1785983B299E518A006B342B /* FriendActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1785983A299E518A006B342B /* FriendActivityModel.swift */; };
+		1785983B299E518A006B342B /* PlaybackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1785983A299E518A006B342B /* PlaybackState.swift */; };
 		17BAA658295B81E20030786D /* beetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BAA657295B81E20030786D /* beetApp.swift */; };
 		17BAA65A295B81E20030786D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BAA659295B81E20030786D /* ContentView.swift */; };
 		17BAA65C295B81E40030786D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BAA65B295B81E40030786D /* Assets.xcassets */; };
@@ -29,6 +29,9 @@
 		17DCFCD5296487930039AB0C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCFCD4296487930039AB0C /* SettingsView.swift */; };
 		17F83B9E29B3742700CED9C7 /* SpotifyiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 17F83B9D29B3742700CED9C7 /* SpotifyiOS */; };
 		17F83BA329B37D0600CED9C7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F83BA229B37D0600CED9C7 /* WebView.swift */; };
+		17FDD7B52A53014800199BA7 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FDD7B42A53014800199BA7 /* KeychainHelper.swift */; };
+		17FDD7B72A53029D00199BA7 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FDD7B62A53029D00199BA7 /* Auth.swift */; };
+		17FDD7B92A53133200199BA7 /* PlaybackStatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FDD7B82A53133200199BA7 /* PlaybackStatesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,7 +53,7 @@
 		1759FAA329A395DF00565259 /* AutenticationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticationHandler.swift; sourceTree = "<group>"; };
 		17604BC929A28F750037123C /* beetAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = beetAPI; sourceTree = "<group>"; };
 		178545A7295C8631002BC581 /* FriendIsListeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendIsListeningView.swift; sourceTree = "<group>"; };
-		1785983A299E518A006B342B /* FriendActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendActivityModel.swift; sourceTree = "<group>"; };
+		1785983A299E518A006B342B /* PlaybackState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackState.swift; sourceTree = "<group>"; };
 		17BAA654295B81E20030786D /* beet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BAA657295B81E20030786D /* beetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beetApp.swift; sourceTree = "<group>"; };
 		17BAA659295B81E20030786D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +70,9 @@
 		17BAA678295B94C10030786D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		17DCFCD4296487930039AB0C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		17F83BA229B37D0600CED9C7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		17FDD7B42A53014800199BA7 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		17FDD7B62A53029D00199BA7 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		17FDD7B82A53133200199BA7 /* PlaybackStatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackStatesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +123,10 @@
 		17859839299E516B006B342B /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				1785983A299E518A006B342B /* FriendActivityModel.swift */,
+				1785983A299E518A006B342B /* PlaybackState.swift */,
+				17FDD7B42A53014800199BA7 /* KeychainHelper.swift */,
+				17FDD7B62A53029D00199BA7 /* Auth.swift */,
+				17FDD7B82A53133200199BA7 /* PlaybackStatesModel.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -285,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17FDD7B72A53029D00199BA7 /* Auth.swift in Sources */,
 				1759FAA429A395DF00565259 /* AutenticationHandler.swift in Sources */,
 				17BAA679295B94C10030786D /* Extentions.swift in Sources */,
 				17BAA667295B821D0030786D /* HomeView.swift in Sources */,
@@ -292,10 +302,12 @@
 				1759FAA029A3938B00565259 /* LoginView.swift in Sources */,
 				17DCFCD5296487930039AB0C /* SettingsView.swift in Sources */,
 				17BAA65A295B81E20030786D /* ContentView.swift in Sources */,
+				17FDD7B52A53014800199BA7 /* KeychainHelper.swift in Sources */,
 				17F83BA329B37D0600CED9C7 /* WebView.swift in Sources */,
+				17FDD7B92A53133200199BA7 /* PlaybackStatesModel.swift in Sources */,
 				172CD34B299FF9D9003B2B62 /* config.swift in Sources */,
 				17BAA658295B81E20030786D /* beetApp.swift in Sources */,
-				1785983B299E518A006B342B /* FriendActivityModel.swift in Sources */,
+				1785983B299E518A006B342B /* PlaybackState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

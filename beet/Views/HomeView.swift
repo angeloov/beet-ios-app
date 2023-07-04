@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
 	@Environment(\.colorScheme) var colorScheme
-	@ObservedObject var friendActivityGetter = FriendActivityGetter()
+	@ObservedObject var playbackStates = PlaybackStatesModel()
 	
 	var body: some View {
 		NavigationView {
@@ -32,7 +32,9 @@ struct HomeView: View {
 							.fontWeight(.medium)
 							.applyBeetGradient()
 						
-						ForEach(friendActivityGetter.activities, id: \.id, content: { el in
+						// Text()
+						
+						ForEach(playbackStates.activities, id: \.id, content: { el in
 							FriendIsListeningView(profilePicURI: el.profilePicURI, username: el.username, songName: el.songName, artistName: el.artistName, albumCoverURI: el.albumCoverURI)
 						})
 						
@@ -46,8 +48,19 @@ struct HomeView: View {
 			}
 		}
 		.onAppear(perform: {
-			friendActivityGetter.emptyActivitiesArray()
-			friendActivityGetter.fetchAllFriendActivities()
+			// playbackStates.emptyActivitiesArray()
+			// playbackStates.fetchAllFriendActivities()
+			
+			let credentials = KeychainHelper.standard.read(service: "token", account: "spotify", type: Auth.self)
+			
+			if (credentials != nil) {
+				print("\n\n\n\n\n")
+				print(credentials!.accessToken)
+				
+				playbackStates.getMyState(accessToken: credentials!.accessToken)
+			}
+			
+			
 		})
 		
 	}

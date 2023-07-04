@@ -41,12 +41,15 @@ struct LoginView: View {
 			Button {
 				showWebView.toggle()
 			} label: {
-				Text("Link")
+				Text("Spotify Login")
 			}
 			.sheet(isPresented: $showWebView) {
-				WebView(url: URL(string: "http://localhost:8888/login")!, showWebView: $showWebView)
+				let spotifyURLString = "https://accounts.spotify.com/authorize?response_type=code&client_id=bc8a41fc9f824cfc80b879e43a2c6c59&scope=user-read-private%20user-read-email%20user-read-playback-state&redirect_uri=http://localhost/api/spotify-login-callback/"
+				
+				let spotifyURL = URL(string: spotifyURLString)!
+				
+				WebView(url: spotifyURL, showWebView: $showWebView, isAuthenticated: $authentication.isAuthenticated)
 			}
-			
 		}
 	}
 }

@@ -18,7 +18,7 @@ class AuthenticationHandler: ObservableObject {
 		DispatchQueue.main.async {
 			print("\(username), \(password)")
 			
-			let url = URL(string: "http://192.168.178.59/api/login")!
+			let url = URL(string: "http://192.168.1.13/api/login")!
 			
 			var request = URLRequest(url: url)
 			request.httpMethod = "POST"
@@ -39,10 +39,13 @@ class AuthenticationHandler: ObservableObject {
 			}
 			
 			task.resume()
-			
-			withAnimation {
-				// self.isAuthenticated.toggle()
-			}
+
+			self.isAuthenticated = true
 		}
+	}
+	
+	
+	func printIsAuthenticated() {
+		print("isAuthenticated: " + String(isAuthenticated))
 	}
 }
